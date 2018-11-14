@@ -27,10 +27,47 @@
 	</header>
 
 	<section>
-	
-	<p class="intro"><img src="img/words3-sm.png" alt="words about lettuce" width="250" height="494" class="right">Lettuce Eat offers salads and wraps, with an emphasis on fresh ingredients and attentive preparation.</p> <!--image borrowed from http://lettuceeatmemphis.com -->
-	<p class="intro">Lettuce Eat is open for lunch and dinner, to dine in or carry out.</p>
-	<hr>
+	<form action="#" method="post">
+			<ul>
+				<li><label for="name">Your Name:</label><input type="text" name="name" id="name"></li>
+				<li><label for="email">Email</label>
+				<input type="email" name="email" id="email"></li>
+				<li>
+					<label for="message">Message</label>
+					<textarea name="message" id="message" cols="30" rows="3" placeholder="no more than 300 characters allowed"></textarea>
+				</li>
+				<fieldset id="meals">
+					<legend>Meals</legend>
+					<ul>
+						<li>
+							<label><input type="radio" name="meal" id="meal" value="breakfast">Breakfast</label>
+							<label><input type="radio" name="meal" id="meal" value="lunch">Lunch</label><label><input type="radio" name="meal" id="meal" value="Dinner">Dinner</label>
+						</li>
+					</ul>
+
+				</fieldset>
+				<li>
+					<fieldset id="dietary">
+						<legend>Dietary Options</legend>
+						<ul>
+
+						<li>
+							<label><input type="checkbox" name="diet" id="diet" value="gluten-free">Gluten Free </label>
+						</li>
+						<li>
+								<label><input type="checkbox" name="diet" id="diet" value="dairy-free">Diary Free </label>
+						</li>
+						<li>
+								<label><input type="checkbox" name="diet" id="diet" value="low-sodium">Low Sodium </label>
+						</li>	
+					  </ul>
+					</fieldset>
+				</li>
+				<li class="buttons"><input type="reset" value="Clear"> <input type="submit" value="Send">
+			</ul>
+
+
+		</form>
 	</section>
 
 
