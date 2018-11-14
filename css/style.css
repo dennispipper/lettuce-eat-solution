@@ -8,8 +8,8 @@ body {
   color: #333333;
   font-size: 14px;
   font-family: "Raleway", Helvetica, Sans-serif;
-  background-color: rgba(180,228,134, .3);
-  
+  background-color: rgba(180, 228, 134, 0.3);
+  background-image: url('../img/bg.png');
 }
 a {
   text-decoration: none;
@@ -39,16 +39,30 @@ img.right {
 	float:right;
 	margin-left: 7px;
 }
-img {
-	max-width:100%;
+/*	max-width:100%;
 	height:auto;
 }
-
+*/
 p.intro {
 	font-weight: lighter;
 	font-size: 2em;
 	line-height: 1.75;
 }
+
+/*add for Ch 14 material*/
+
+.announce {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  color: rgb(50, 175, 50);
+  border-top: 1px solid;
+  border-left: 3px solid;
+  border-radius: 10px;
+  float:right;
+  margin: 10px;
+
+}
+
 
 /**
 	horizontal menu style
@@ -88,7 +102,7 @@ header .active {
 	Tables
 ***/
 .spacer {
-	 border-bottom: 1px dotted black; 
+	 border-bottom: 1px dotted black;
 	 width:275px;
 }
 caption {
@@ -107,7 +121,7 @@ th {
 }
 td {
 	padding: 2px;
-	
+
 }
 td.cost {
 	font-weight: 600;
@@ -116,7 +130,7 @@ tr:hover {
 	background-color: rgba(245, 245, 245, 0.83)
 	}
 /**************************************************************************
- Structure Styles 
+ Structure Styles
 **************************************************************************/
 
 section {
@@ -126,7 +140,7 @@ section {
 header {
   background-color: rgba(180,228,134, .7);
   padding: 1.5em 4em;
-  
+
 }
 header h1 {
   color: white;
@@ -162,7 +176,7 @@ footer {
 
 
 
-/************************************************************************** 	Form elements styling 
+/************************************************************************** 	Form elements styling
 **************************************************************************/
 
 
@@ -170,52 +184,62 @@ footer {
 
 
 /***** Form Extras ******/
-
-/*resets the radio and checkbox to be styled*/
- input[type="checkbox"],
- input[type="radio"] {
-  display: none;
+form ul li {
+  list-style-type: none;
 }
-/* creates a checkbox using CSS - much nicer*/
- input[type="checkbox"] + label:before {
-  background-color: white;
-  border: 1px solid #d6d8d9;
-  content: "";
-  display: inline-block;
-  height: 16px;
-  margin: -2px 6px 0 0;
-  vertical-align: middle;
-  width: 16px;
+form {
+  width: 40em;
+  border: 1px solid #777;
+  border-radius: 10px;
+  box-shadow: .2em .2em .5em #999;
+  background-color:rgba(245, 245, 245, 0.83);
+  padding: 1em;
+  margin: 1em;
 }
-/*creates a checkmark and aligns in box*/
- input[type="checkbox"]:checked + label:before {
-  content: "\2713"; /*Unicode checkmark symbol*/
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
+label {
+  display: block;
+  float: left;
+  width:10em;
+  margin-right: .5em;
+  color: #333;
 }
-/* creates a radio button list using CSS - much nicer*/
- input[type="radio"] + label:before {
-  background-color: white;
-  border: 1px solid #d6d8d9;
-  border-radius: 12px;
-  content: "";
-  display: inline-block;
-  height: 12px;
-  margin: -2px 6px 0 0;
-  vertical-align: middle;
-  width: 12px;
-}
-/* creates a radio button and aligns it in the circle*/
- input[type="radio"]:checked + label:before {
-  content: "\2022";
-  font-size: 26px;
-  text-align: center;
-  line-height: 13px;
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
+legend {
+  display: block;
+  width:10em;
+  float: left;
+  margin-right: .5em;
+  text-align: right;
+  color: #04699d;
+}
+#meals label, #dietary label{
+  color: #000;
+  display: inline;
+  float: none;
+  text-align: inherit;
+  width: auto;
+  font-weight: normal;
+  background-color: inherit;
+}
+#meals ul li {
+  display: inline;
+  margin-bottom: 0;
+
+}
+#dietary ul {
+  margin-left: 11em;
+}
+#dietary ul li {
+  margin-bottom: 0;
+  clear:none;
+}
 /**************************************************************************
- 	Helper Styles 
+ 	Helper Styles
 **************************************************************************/
 
 
